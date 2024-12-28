@@ -1,3 +1,4 @@
+<!-- made for understanding laravel -->
 <?php
 
 namespace App\Http\Controllers;
