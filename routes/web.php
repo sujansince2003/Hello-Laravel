@@ -12,3 +12,12 @@ Route::get("/about",function(){
 });
 
 Route::get("/cars",[CarController::class,"index"]);
+
+// using group routes by controller
+
+Route::controller(CarController::class)->group(function()
+{
+    Route::get("/users","index");
+    Route::get("/users/{id}","showid");
+   
+});

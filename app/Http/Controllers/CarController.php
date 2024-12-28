@@ -10,6 +10,10 @@ class CarController extends Controller{
         $cars = ["d","ddas","fds"];
         return view("welcome");
     }
+    public function showid($id)
+    {
+        return "id is " . $id;
+    }
 
 }
 
