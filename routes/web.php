@@ -25,6 +25,6 @@ Route::controller(CarController::class)->group(function()
 
 Route::controller(SumDiffController::class)->group(function()
 {
-    Route::get("/sum/{x}/{y}","sum");
-    Route::get("/diff/{x}/{y}","diff");
+    Route::get("/sum/{x}/{y}","sum")->whereNumber(["x","y"]);
+    Route::get("/diff/{x}/{y}","diff")->whereNumber(["x","y"]);
 });
