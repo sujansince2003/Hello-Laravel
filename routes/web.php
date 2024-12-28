@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
+use App\Http\Controllers\SumDiffController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,4 +21,10 @@ Route::controller(CarController::class)->group(function()
     Route::get("/users","index");
     Route::get("/users/{id}","showid");
    
+});
+
+Route::controller(SumDiffController::class)->group(function()
+{
+    Route::get("/sum/{x}/{y}","sum");
+    Route::get("/diff/{x}/{y}","diff");
 });
