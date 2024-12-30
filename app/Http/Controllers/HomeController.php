@@ -10,13 +10,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        if(View::exists("testcondition"))
-        {
-            return View::make("testcondition");
-        }
-        else{
-            return "View not available";
-        }
+        // if(View::exists("testcondition"))
+        // {
+        //     return View::make("testcondition");
+        // }
+        // else{
+        //     return "View not available";
+        // }
         // return "hello home";
         // return View::make("about",["name"=>"sujan khatri"]);
     }

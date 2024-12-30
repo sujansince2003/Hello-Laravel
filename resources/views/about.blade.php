@@ -10,6 +10,8 @@
 
 <body>
     <h1>hello about</h1>
+    {{-- this are blade comments --}}
+    @include('buttons.button', ['text' => 'hello'])
 </body>
 
 </html>
